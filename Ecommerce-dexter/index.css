@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+    font-family: sans-serif;
+}
+/*------------------------------------------------------ NAV BAR ---------------------------------------*/
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+}
+.top-nav-bar{
+    height: 60px;
+    top: 0;
+    position: sticky;
+    background-color: darkgray;
+    margin-bottom: 20px;
+    padding-bottom: 3px solid gray;
+    z-index: 2;
+}
+.form-control{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 1px solid orange !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    
+}
+
+.input-group-text{
+    background-color: orange !important;
+    border: 1px solid green !important;
+    margin: 5px 10px 5px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;
+
+}
+
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li{
+    list-style-type: none;
+    border: 1px solid orange;
+    padding: 15px 35px ;
+    text-align: center;
+    background-color: rgb(247, 165, 14);
+    cursor: pointer;
+}
+.menu-bar ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.fa-basket-shopping{
+    margin-right: 5px;
+}
+.fa-right-to-bracket{
+    margin-right: 5px;
+}
+/*------------------------------ MEDIA QUERY FOR RESPONSIVE for NAVBAR------------------------------*/
+@media only screen and (max-width: 980px)
+{
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 110%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%; 
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+
+}
+
+/*------------------------------------------------SIDE MENU---------------------------------------*/
+.side-menu{
+    height: 85vh;
+    width: 15%;
+    font-size: 20px;
+    float: left;
+    z-index: 2;
+    background-color: gray;
+}
+.side-menu{
+    margin-left: 5px;
+}
+.side-menu ul{
+    margin-left: -14px;
+}
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.side-menu ul li:hover{
+    color: orange;
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 80px;
+    font-size: 18px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background-color: black;
+    box-shadow: 1px 1px 4px 1px orange;
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menu-btn, #close-btn{
+    font-size: 30px;
+    margin: 10px;
+    color: orange;
+    display: none;
+
+
+}
+/*----------------------------------MEDIA QUERY FOR RESPONSIVE SIDEBAR--------------------------*/
+@media only screen and (max-width: 980px)
+{
+    .side-menu{
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+        background-color: darkgray;
+        display: none;
+    }
+    .side-menu ul li ul{
+        top: 133px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 31%;
+    }
+    #menu-btn{
+        display: block;
+    }
+}
+
+/*-------------------------------------------------------    SLIDER CSS      ----------------------------------------------------*/
+.slider{
+    width: 84%;
+    margin-left: 16%;
+    padding: 0 10px;
+}
+#carouselExampleSlidesOnly{
+    box-shadow: 1px 1px 4px 1px orange;
+}
+img{
+    height: 85vh;
+}
+
+/*----------------------------------------------    MEDIA QUERY FOR SLIDER CSS   ---------------------------------------------*/
+@media only screen and (max-width: 980px)
+{
+    .slider{
+        width: 100%;
+        margin-left: 0;   
+    }
+    img{
+        width: 100%;
+        height: 40vh;
+    }
+   
+}
+
+/*------------------------------------------------     FEATURED CATEGARIES      -------------------------------------------------*/
+.featured-categaries{
+    margin: 50px 0;
+    
+}
+.featured-categaries img{
+    width: 100%;
+    height: 270px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.featured-categaries img:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px 1px gray;
+}
+/*----------------------------------------------            ON SALE PRODUCT          -------------------------------------------------*/
+.title-box{
+    background-color: orange;
+    color: white;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    border: 2px solid green;
+    text-align: center;
+
+}
+.title-box h2{
+    font-size: 24px;
+    width: auto;
+}
+
+/* -------------------------------------------------     product-top         ------------------------------------------- */
+.product-top img{
+    width: 100%;
+    height: auto;
+}
+.ovelay-right{
+    display: block;
+    opacity: 0;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+
+}
+.ovelay-right fa{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 35px;
+    font-size: 25px;
+    padding: 3px;
+    margin: 5% 0 5% 0;
+}
+.ovelay-right .btn-secondary{
+    background-color: gray !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.ovelay-right .btn-secondary:hover{
+    background-color: orange !important;
+}
+
+.product-top:hover .ovelay-right{
+    opacity: 1;
+    margin-left: 25%;
+    transition: 0.5s;
+
+}
+/*---------------------------------------------            product-BOTTOM       -------------------------------------- */
+.product-bottom .fa{
+    color: orange;
+    font-size: 10px;
+}
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-bottom h5{
+    font-size: 15px;
+}
+.new-product{
+    margin: 50px 0;
+
+}
+.row{
+    margin: 20px 0;
+}
+/* --------------------------------------            MEDIA QUERY FOR ON SALE PRODUCT       ---------------------------------*/
+@media only screen and (max-width: 980px){
+    .product-top:hover .ovelay-right{
+        opacity: 1;
+        margin-left: 35%;
+        transition: 0.5s;
+    
+
+    }
+}
+/* --------------------------------------------          website-features        -------------------------------------------*/
+.website-features{
+    margin: 60px 0;
+}
+.website-features img{
+    width: 20%;
+    height: auto;
+}
+.feature-text{
+    float: right;
+    width: 80%;
+    padding-left: 10px;
+}
+.feature-box{
+    padding-top: 20px;
+}
+.feature-box:hover{
+    border: 1px solid darkgray;
+    transition: 1s;
+
+}
+/* --------------------------------------------         FOOTER SECTION              -------------------------------------- */
+.footer{
+    margin: 50px 0 -20px 0;
+    background-color: black;
+    color: white;
+}
+.footer h1{
+    font-size: 20px;
+    margin: 25px 0;
+
+}
+.footer p{
+    font-size: 13px;
+}
+
