@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <center>
+
+        <header>
+            <h1>Student Registration Form</h1>
+        </header>
+
+        <br>
+        <main>
+
+            <table border=1 id="table_1">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" id="age"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select id="course">
+                            <option>IT</option>
+                            <option>CSE</option>
+                            <option>EEE</option>
+                            <option>ECE</option>
+                            <option>MECH</option>
+                            <option>AUTO</option>
+                            <option>CIVIL</option>
+                            <option>AIDS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="save()">save</button></td>
+                </tr>
+            </table>
+<br>
+            <!----------------------------------------  REGISTERED DATA ------------------------------------------->
+            <hr>
+            <br>
+            <h2>Registered Details</h2>
+            <br>
+            <table border="1" class = "table_2">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>GENDER</th>
+                        <th>COURSE</th>
+                        <th>E-MAIL</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody"></tbody>
+            </table>
+
+        </main>
+
+        <script src="./index.js"></script>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #35374B;
+}
+header{
+    background-color: #8EB8AC;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+h1{
+    padding: 10px;
+    text-align: center;
+}
+
+
+table {
+    background-color: #F6B17A;
+    width: 35%;
+    border: none;
+    border-radius: 5px;
+}
+td{
+    padding: 7px;
+    border: none;
+    background-color: #344955;
+    color: white;
+}
+
+#name, #age, #course, #email{
+    width:98%;
+    background-color: #93B1A6;
+    color: black;
+    padding: 0;
+    height: 20px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #F6B17A;
+    border-radius: 5px;
+}
+
+h2{
+    background-color: #8EB8AC;
+    width: 50%;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.table_2{
+    background-color: #93B1A6;
+    width: 100%;
+}
+th{
+    padding: 10px;
+    border: none;
+    background-color: #5C8374;
+}
+.table_2 > td{
+color: white;
+}
